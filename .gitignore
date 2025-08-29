@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Virtual environment
+.venv/
+venv/
+
+# Data files
+src/data/bitcoin-historical-data/*.csv
+src/data/processed/*.csv
+
+# IDE
+.idea/
+
