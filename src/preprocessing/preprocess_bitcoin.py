@@ -92,6 +92,9 @@ def preprocess_bitcoin_data(resample_choice: str = "daily"):
     # Add indicators
     resampled_df = add_technical_indicators(resampled_df)
 
+    # Drop NaN rows caused by indicator lookback periods
+    resampled_df.dropna(inplace=True)
+
     # Save processed data
     processed_dir = os.path.join(os.path.dirname(__file__), "..", "data", "processed")
     os.makedirs(processed_dir, exist_ok=True)
