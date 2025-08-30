@@ -12,7 +12,11 @@ venv/
 # Data files
 src/data/bitcoin-historical-data/*.csv
 src/data/processed/*.csv
-src/models/*.pkl
+
+
+# Model files
+*.pkl
+*.html
 
 # IDE
 .idea/
